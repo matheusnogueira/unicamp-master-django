@@ -14,7 +14,11 @@ git clone https://github.com/matheusnogueira/unicamp-master-django.git
 ```
 
 ```bash
-pip install -r requeriments.txt
+cd unicamp-master-django/
+```
+
+```bash
+pip install -r requirements.txt 
 ```
 
 ```bash
