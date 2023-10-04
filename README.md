@@ -1,6 +1,6 @@
 # TIME IS OVER
 
-## TODO
+## PASSO A PASSO
 ```bash
 cd /home/ubuntu/environment
 ```
@@ -24,3 +24,8 @@ pip install -r requirements.txt
 ```bash
 python manage.py runserver $IP:$PORT
 ```
+
+## CREDENCIAIS
+
+usr: admin
+pas: admin
