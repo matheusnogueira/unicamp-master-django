@@ -16,7 +16,6 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -27,6 +26,12 @@ SECRET_KEY = 'django-insecure-#8i67k3z02k$8fyte_gxz2%75y6t9z1h-c!tim#9+_zwt7+erp
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
+# TODO: IMPORTANTE!
+# CORREÇÃO DO ERRO DE CSRF NO CLOUD 9
+CSRF_TRUSTED_ORIGINS = ['https://98d9aa5b75664f7689c4149e247f8b25.vfs.cloud9.us-east-2.amazonaws.com',
+                        'http://127.0.0.1:8000',
+                        ]
 
 # Controle da versão do sistema
 APP_VERSION = '0.1.001'
@@ -83,12 +88,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'core.wsgi.application'
-
-# TODO: IMPORTANTE!
-# CORREÇÃO DO ERRO DE CSRF NO CLOUD 9
-CSRF_TRUSTED_ORIGINS = ['https://98d9aa5b75664f7689c4149e247f8b25.vfs.cloud9.us-east-2.amazonaws.com',
-                        'http://127.0.0.1:8000',
-                        ]
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
